@@ -13,7 +13,7 @@ Coursework: Computer Emulation
 
 */
 
-#include "includes/memory.h"
+#include "inc/memory.h"
 
 #define MEMORY_SIZE 1024
 #define MEM_HIZ 0x0

@@ -30,4 +30,7 @@ Coursework: Computer Emulation
 	// Movement
 	#define JMP 0x5
 
+	// Storage
+	#define STO 0x6
+
 #endif

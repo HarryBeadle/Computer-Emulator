@@ -32,4 +32,6 @@ Coursework: Computer Emulation
 
 	int updateMemory(void);
 
+	#include "../memory.c"
+
 #endif

@@ -13,8 +13,10 @@ Coursework: Computer Emulation
 
 */
 
-#include "includes/opcodes.h"
-#include "includes/registers.h"
+#include "inc/globals.h"
+#include "inc/opcodes.h"
+#include "inc/alu.h"
+#include "inc/memory.h"
 
 uint16_t pc;
 uint16_t ir;
@@ -42,7 +44,7 @@ void tick(void)
 int main(void)
 {
 	for (int clock_cycle = 0; true; clock_cycle++) {
-		printf("%d\n", clock_cycle);
+		printf("%d %d %d\n", clock_cycle, data);
 		tick()
 	}
 }

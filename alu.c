@@ -13,7 +13,7 @@ Coursework: Computer Emulation
 
 */
 
-#include "includes/alu.h"
+#include "inc/alu.h"
 
 int updateALU(void)
 {
