@@ -5,23 +5,23 @@
 #include "../inc/globals.h"
 #include "../inc/control_unit.h"
 
-// static int test_program[] = {
-// 	JMP << 12 | 0x0004, 
-// 	0x0000,
-// 	0x0001,
-// 	0x0009,
-// 	ADD << 12 | 0x02 << 6 | 0x03,
-// 	STO << 12 | 0x0002,
-// 	JMP << 12 | 0x0004
-// };
-
 static int test_program[] = {
-	ADD << 12 | 2 << 6 | 3, 
-	STO << 12 | 4,
-	0x0001,
-	0x0001,
+	JMP << 12 | 0x0004, 
 	0x0000,
+	0x0001,
+	0x0009,
+	ADD << 12 | 0x01 << 6 | 0x02,
+	STO << 12 | 0x0001,
+	JMP << 12 | 0x0004
 };
+
+// static int test_program[] = {
+// 	ADD << 12 | 2 << 6 | 3, 
+// 	STO << 12 | 4,
+// 	0x0001,
+// 	0x0001,
+// 	0x0000,
+// };
 
 void memdump(int n)
 {
@@ -49,7 +49,7 @@ int main(void)
 	accumulator = 5;
 	program_counter = 0;
 	printf("ADDR   DATA   PC     IR     ACC\n");
-	for (int i = 0; i < 9; i++) {
+	for (int i = 0; i < 30; i++) {
 		printf("%#06x %#06x %#06x %#06x %#06x\n", 
 			addr,
 			data,
