@@ -1,3 +1,18 @@
+/*
+
+Harry Beadle
+hb11g15@soton.ac.uk
+
+Date Created: 10/02/2017
+memory_test.c
+
+> Tests for all inputs and modes for the memory.
+
+ELEC2204 Computer Engineering
+Coursework: Computer Emulation
+
+*/
+
 #include <stdio.h>
 #include <assert.h>
 

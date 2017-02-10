@@ -1,7 +1,16 @@
 /*
-ALU.c
 
-based on the 4-bit input (same as opcode for simplicitu _)
+Harry Beadle
+hb11g15@soton.ac.uk
+
+Date Created: 10/02/2017
+alu.c
+
+> Control flow and behavior of the ALU.
+
+ELEC2204 Computer Engineering
+Coursework: Computer Emulation
+
 */
 
 #include "includes/alu.h"

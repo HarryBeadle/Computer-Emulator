@@ -6,7 +6,7 @@ hb11g15@soton.ac.uk
 Date Created: 10/02/2017
 emulator.c
 
-> Main code for simulation of the processor.
+> Wrapper for simulation of the processor.
 
 ELEC2204 Computer Engineering
 Coursework: Computer Emulation

@@ -1,3 +1,18 @@
+/*
+
+Harry Beadle
+hb11g15@soton.ac.uk
+
+Date Created: 10/02/2017
+alu.h
+
+> Defines behavior of the memory.
+
+ELEC2204 Computer Engineering
+Coursework: Computer Emulation
+
+*/
+
 #include "includes/memory.h"
 
 #define MEMORY_SIZE 1024

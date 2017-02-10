@@ -6,8 +6,8 @@ hb11g15@soton.ac.uk
 Date Created: 10/02/2017
 opcodes.h
 
-> Definition of the 4-bit opcodes for emulated proccessor 
-> archetecture.
+> Definition of the 4-bit opcodes for emulated processor 
+> architecture.
 
 ELEC2204 Computer Engineering
 Coursework: Computer Emulation

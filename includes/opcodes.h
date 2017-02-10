@@ -6,7 +6,7 @@ hb11g15@soton.ac.uk
 Date Created: 10/02/2017
 opcodes.h
 
-> opcodes for the simulated proccessor.
+> opcodes for the simulated processor.
 > Instructions are as follows:
 >> [OPCODE (4)][OPERAND A (6)][OERAND B (6)]
 

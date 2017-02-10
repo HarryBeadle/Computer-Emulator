@@ -1,7 +1,17 @@
 /*
-ALU.h
 
-based on the 4-bit input (same as opcode for simplicitu _)
+Harry Beadle
+hb11g15@soton.ac.uk
+
+Date Created: 10/02/2017
+alu.h
+
+> Header for the ALU of the Processor.
+> alu_control takes the opcode for ALU operations.
+
+ELEC2204 Computer Engineering
+Coursework: Computer Emulation
+
 */
 
 #ifndef _ALU_H_
