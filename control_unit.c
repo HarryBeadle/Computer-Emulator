@@ -72,4 +72,5 @@ int updateCU(void)
 			next_state = DECODE;
 			break;
 	}
+	return 0;
 }
