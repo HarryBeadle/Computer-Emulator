@@ -16,7 +16,7 @@ Coursework: Computer Emulation
 #include <stdio.h>
 #include <assert.h>
 
-#include "../includes/memory.h"
+#include "../inc/memory.h"
 
 int main(void) {
 	for (int a = 0x0000; a < MEMORY_SIZE; a++) {

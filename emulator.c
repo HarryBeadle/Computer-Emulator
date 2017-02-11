@@ -12,8 +12,6 @@ ELEC2204 Computer Engineering
 Coursework: Computer Emulation
 
 */
-#include <stdio.h>
-#include <string.h>
 
 #include "inc/emulator.h"
 

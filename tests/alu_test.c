@@ -16,8 +16,8 @@ Coursework: Computer Emulation
 #include <stdio.h>
 #include <assert.h>
 
-#include "../includes/opcodes.h"
-#include "../includes/alu.h"
+#include "../inc/opcodes.h"
+#include "../inc/alu.h"
 
 int main(void)
 {
