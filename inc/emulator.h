@@ -17,6 +17,7 @@ Coursework: Computer Emulation
 
 	#include <stdio.h>
 	#include <string.h>
+	#include <ncurses.h>
 
 	#include "globals.h"
 	#include "opcodes.h"
@@ -24,12 +25,15 @@ Coursework: Computer Emulation
 	#include "memory.h"
 	#include "control_unit.h"
 
-	char* null;
+	char* msg;
 
 	int tick(void);
 	int main(void);
+	void load(void);
+
 	char* getStateString(int state);
-	void memdump(int n);
+	char* getMemState(void);
+	char* getOpcodeString(int opcode);
 
 	static int program[] = {
 		JMP << 12 | 3,
