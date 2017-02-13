@@ -1,6 +1,6 @@
 \documentclass[a4paper]{article}
 
-\title{\texttt{ELEC2204} Computer Emulation in C}
+\title{\texttt{ELEC2204} Computer Emulation in Software}
 \author{Harry Beadle \\27770834\\\texttt{hb11g15}}
 
 \usepackage[margin=1in]{geometry}
@@ -11,8 +11,6 @@
 \setlength{\parindent}{0pt}
 
 \begin{document}
-
-
 
 \maketitle
 
@@ -189,7 +187,6 @@ The CU must be initialized before any computation can take place. The initial st
 
 \begin{table}[H]
 \centering
-\caption{The required initial state of the Control Unit to ensure proper operation of the emulator.}
 \begin{tabular}{ll}
     \verb|next_state| & \verb|GET_INSTRUCTION| \\
     \verb|program_counter| & \verb|0x0000|
@@ -201,6 +198,29 @@ The CU is implemented in the \verb|control_unit.c| and \verb|control_unit.h| fil
 With the control unit finished, the whole of the emulation code is ready. In order to properly test the control unit, a wrapper is required to load programs into memory and show outputs.
 
 \section{Wrapper}
+
+The purpose of the wrapper is to allow the user to view the internals of the emulated proccessor as it is in operation. The wrapper was designed with the following principles in mind.
+
+\begin{itemize}
+    \item To allow you to step though a program clock-edge by clock-edge.
+    \item To show you all of the important data in a human-readble format at a glance.
+\end{itemize}
+
+This was achived using a \verb|ncurses| interface. Once the program is launched you are shown the system's current memory and each module's statistics.
+
+The user can then force a clock edge by following the prompt and pressing enter. If the user wants to run an actual program rather then just what is in memory then pressing \verb|l| loads a program. 
+
+This program can either be a \verb|.hex| file that is specificed as an argument to the program or, by default, a simple program that adds 1 to a location in memory repeatadly. This program is defined in \verb|emulator.h|.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{images/wrapperscreen.png}
+\caption{Screenshot of the wrapper program mid-way though a proccess.}
+\end{figure}
+
+The TUI underlines the currently selected address on the \verb|addr| bus.
+
+Please note that in order to compile the wrapper you will need the \verb|ncurses| library and to compile with the command-line option \verb|-lncurses|.
 
 \section{Assembler}
 
