@@ -15,8 +15,8 @@ Coursework: Computer Emulation
 
 */
 
-#ifndef _OPCODES_
-	#define _OPCODES_
+#ifndef _OPCODES_H_
+	#define _OPCODES_H_
 
 	// Mathmatical Operations
 	#define ADD 0x0

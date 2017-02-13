@@ -16,7 +16,7 @@ Coursework: Computer Emulation
 	#define _EMULATOR_H_
 
 	#include <stdio.h>
-	#include <string.h>
+	#include <string.h> // for memcpy()
 	#include <ncurses.h>
 
 	#include "globals.h"

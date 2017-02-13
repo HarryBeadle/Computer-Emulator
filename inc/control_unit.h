@@ -1,3 +1,18 @@
+/*
+
+Harry Beadle
+hb11g15@soton.ac.uk
+
+Date Created: 10/02/2017
+control_unit.h
+
+> Header for the Control Unit
+
+ELEC2204 Computer Engineering
+Coursework: Computer Emulation
+
+*/
+
 #ifndef _CONTROL_UNIT_H_
 	#define _CONTROL_UNIT_H_
 
